@@ -63,107 +63,107 @@
   },
 
   // Language-specific settings
-  "languages": {
-    "Astro": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      "formatter": "language_server",
-      "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 90,
-      "show_completion_documentation": true
-    },
-    "JavaScript": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      // "formatter": {
-      //   "external": {
-      //     "command": "prettier",
-      //     "arguments": ["--stdin-filepath", "{buffer_path}"]
-      //   }
-      // },
-      "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 90,
-      "show_completion_documentation": true,
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      },
-      "language_servers": ["eslint"]
-    },
-    "TypeScript": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      // "formatter": {
-      //   "external": {
-      //     "command": "prettier",
-      //     "arguments": ["--stdin-filepath", "{buffer_path}"]
-      //   }
-      // },
-      "soft_wrap": "preferred_line_length",
-      "preferred_line_length": 90,
-      "show_completion_documentation": true,
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      },
-      "language_servers": ["eslint"]
-    },
-    "TSX": {
-      "tab_size": 2,
-      "format_on_save": "on",
-      // "formatter": {
-      //   "external": {
-      //     "command": "prettier",
-      //     "arguments": ["--stdin-filepath", "{buffer_path}"]
-      //   }
-      // },
-      "code_actions_on_format": {
-        "source.fixAll.eslint": true
-      },
-      "language_servers": ["eslint"]
-    },
-    "JSON": {
-      "format_on_save": "on"
-    }
-  },
+  // "languages": {
+  //   "Astro": {
+  //     "tab_size": 2,
+  //     "format_on_save": "on",
+  //     "formatter": "language_server",
+  //     "soft_wrap": "preferred_line_length",
+  //     "preferred_line_length": 90,
+  //     "show_completion_documentation": true
+  //   },
+  //   "JavaScript": {
+  //     "tab_size": 2,
+  //     "format_on_save": "on",
+  //     // "formatter": {
+  //     //   "external": {
+  //     //     "command": "prettier",
+  //     //     "arguments": ["--stdin-filepath", "{buffer_path}"]
+  //     //   }
+  //     // },
+  //     "soft_wrap": "preferred_line_length",
+  //     "preferred_line_length": 90,
+  //     "show_completion_documentation": true,
+  //     "code_actions_on_format": {
+  //       "source.fixAll.eslint": true
+  //     },
+  //     "language_servers": ["eslint"]
+  //   },
+  //   "TypeScript": {
+  //     "tab_size": 2,
+  //     "format_on_save": "on",
+  //     // "formatter": {
+  //     //   "external": {
+  //     //     "command": "prettier",
+  //     //     "arguments": ["--stdin-filepath", "{buffer_path}"]
+  //     //   }
+  //     // },
+  //     "soft_wrap": "preferred_line_length",
+  //     "preferred_line_length": 90,
+  //     "show_completion_documentation": true,
+  //     "code_actions_on_format": {
+  //       "source.fixAll.eslint": true
+  //     },
+  //     "language_servers": ["eslint"]
+  //   },
+  //   "TSX": {
+  //     "tab_size": 2,
+  //     "format_on_save": "on",
+  //     // "formatter": {
+  //     //   "external": {
+  //     //     "command": "prettier",
+  //     //     "arguments": ["--stdin-filepath", "{buffer_path}"]
+  //     //   }
+  //     // },
+  //     "code_actions_on_format": {
+  //       "source.fixAll.eslint": true
+  //     },
+  //     "language_servers": ["eslint"]
+  //   },
+  //   "JSON": {
+  //     "format_on_save": "on"
+  //   }
+  // },
 
-  // Language server protocol (LSP) settings
-  "lsp": {
-    "astro-language-server": {
-      "initialization_options": {
-        "typescript": {
-          "tsdk": "./node_modules/typescript/lib"
-        }
-      }
-    },
-    "eslint": {
-      "settings": {
-        "codeActionOnSave": {
-          "enable": true,
-          "mode": "fixAll",
-          "rules": [
-            "import/order",
-            "import/newline-after-import",
-            "prefer-template",
-            "no-unused-vars",
-            "@typescript-eslint/no-unused-vars"
-          ]
-        },
-        "workingDirectory": { "mode": "auto" }
-      }
-    }
-  },
+  // // Language server protocol (LSP) settings
+  // "lsp": {
+  //   "astro-language-server": {
+  //     "initialization_options": {
+  //       "typescript": {
+  //         "tsdk": "./node_modules/typescript/lib"
+  //       }
+  //     }
+  //   },
+  //   "eslint": {
+  //     "settings": {
+  //       "codeActionOnSave": {
+  //         "enable": true,
+  //         "mode": "fixAll",
+  //         "rules": [
+  //           "import/order",
+  //           "import/newline-after-import",
+  //           "prefer-template",
+  //           "no-unused-vars",
+  //           "@typescript-eslint/no-unused-vars"
+  //         ]
+  //       },
+  //       "workingDirectory": { "mode": "auto" }
+  //     }
+  //   }
+  // },
 
-  // Prettier configuration (for other file types)
-  "prettier": {
-    "allowed": true,
-    "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-    "tabWidth": 2,
-    "bracketSpacing": true,
-    "trailingComma": "es5",
-    "semi": true,
-    "jsxSingleQuote": false,
-    "singleQuote": false,
-    "printWidth": 80
-  },
+  // // Prettier configuration (for other file types)
+  // "prettier": {
+  //   "allowed": true,
+  //   "plugins": ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
+  //   "tabWidth": 2,
+  //   "bracketSpacing": true,
+  //   "trailingComma": "es5",
+  //   "semi": true,
+  //   "jsxSingleQuote": false,
+  //   "singleQuote": false,
+  //   "printWidth": 80
+  // },
 
   // Enable debug logging to verify formatting and linting
   "log_level": "debug"
